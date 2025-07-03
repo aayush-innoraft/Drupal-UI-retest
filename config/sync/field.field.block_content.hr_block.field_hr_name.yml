@@ -1,0 +1,19 @@
+uuid: 4fe1df72-f5c7-4b4d-8c9d-7ef5042817c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hr_block
+    - field.storage.block_content.field_hr_name
+id: block_content.hr_block.field_hr_name
+field_name: field_hr_name
+entity_type: block_content
+bundle: hr_block
+label: HR-name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

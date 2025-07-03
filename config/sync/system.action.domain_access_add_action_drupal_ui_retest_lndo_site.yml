@@ -1,0 +1,15 @@
+uuid: 5d0e6f00-e12d-4332-be18-cd5f5cf79c55
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.drupal_ui_retest_lndo_site
+  module:
+    - domain_access
+id: domain_access_add_action_drupal_ui_retest_lndo_site
+label: 'Add selected content to the local-employee-management-portal domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id:
+    - drupal_ui_retest_lndo_site

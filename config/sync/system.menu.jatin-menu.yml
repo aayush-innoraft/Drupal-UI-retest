@@ -1,0 +1,8 @@
+uuid: edcab845-4d81-4078-8aad-08327d736ff3
+langcode: en
+status: true
+dependencies: {  }
+id: jatin-menu
+label: 'jatin menu'
+description: ''
+locked: false

@@ -1,0 +1,11 @@
+uuid: 8d9c7011-264d-4083-a438-6b34990bfef8
+langcode: en
+status: true
+dependencies: {  }
+id: drupal_ui_retest_lndo_site
+domain_id: 10641847
+hostname: drupal-ui-retest.innoraft.site
+name: local-employee-management-portal
+scheme: https
+weight: 1
+is_default: false

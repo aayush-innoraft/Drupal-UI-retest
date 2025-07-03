@@ -1,0 +1,15 @@
+uuid: 7acfc589-5484-49f3-9f81-bc4f6b2a66f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.drupal_ui_retest_lndo_site
+  module:
+    - domain_access
+id: domain_access_remove_action_drupal_ui_retest_lndo_site
+label: 'Remove selected content from the local-employee-management-portal domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id:
+    - drupal_ui_retest_lndo_site

@@ -1,0 +1,39 @@
+uuid: c2536133-063f-4d1a-a410-37301c39a1a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.aayush-salary
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_aayushsalary
+theme: bootstrap5
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:aayush-salary'
+settings:
+  id: 'system_menu_block:aayush-salary'
+  label: aayush-salary
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/jatin\r\n/garvita\r\n/puneet\r\n/kalash"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

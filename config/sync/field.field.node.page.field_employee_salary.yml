@@ -1,0 +1,29 @@
+uuid: 99c86059-b624-4cd1-bad0-9d1adff4eaef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee_salary
+    - node.type.page
+    - taxonomy.vocabulary.salary
+id: node.page.field_employee_salary
+field_name: field_employee_salary
+entity_type: node
+bundle: page
+label: EMPLOYEE-salary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      salary: salary
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

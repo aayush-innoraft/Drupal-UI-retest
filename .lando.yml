@@ -1,0 +1,4 @@
+name: drupal-ui-retest
+recipe: drupal10
+config:
+  webroot: web
