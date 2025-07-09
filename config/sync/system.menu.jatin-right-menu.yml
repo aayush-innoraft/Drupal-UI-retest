@@ -1,0 +1,8 @@
+uuid: 262f3235-d6bd-43cd-9bd3-04e013d00856
+langcode: en
+status: true
+dependencies: {  }
+id: jatin-right-menu
+label: 'jatin right menu'
+description: ''
+locked: false

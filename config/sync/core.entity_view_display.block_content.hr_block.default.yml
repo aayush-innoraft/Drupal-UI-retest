@@ -1,0 +1,44 @@
+uuid: ab74ccf6-bfd8-4aae-b1c8-ad305074cf17
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hr_block
+    - field.field.block_content.hr_block.field_hr_image
+    - field.field.block_content.hr_block.field_hr_name
+    - field.field.block_content.hr_block.field_role
+  module:
+    - image
+id: block_content.hr_block.default
+targetEntityType: block_content
+bundle: hr_block
+mode: default
+content:
+  field_hr_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_hr_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_role:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

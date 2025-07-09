@@ -1,0 +1,65 @@
+uuid: 933f69cb-6cc4-4bc4-b03d-f8125457a5ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.emp_card
+    - field.field.block_content.emp_card.body
+    - field.field.block_content.emp_card.field_emp_image
+    - field.field.block_content.emp_card.field_social_media_links
+    - field.field.block_content.emp_card.field_your_role
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: block_content.emp_card.default
+targetEntityType: block_content
+bundle: emp_card
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_emp_image:
+    type: image_image
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_social_media_links:
+    type: link_default
+    weight: 29
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_your_role:
+    type: entity_reference_autocomplete
+    weight: 30
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

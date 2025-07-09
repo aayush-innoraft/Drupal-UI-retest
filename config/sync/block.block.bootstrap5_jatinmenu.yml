@@ -1,0 +1,39 @@
+uuid: 279f6c72-1e1b-43e2-88f5-3f3fba69848c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.jatin-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_jatinmenu
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:jatin-menu'
+settings:
+  id: 'system_menu_block:jatin-menu'
+  label: 'jatin menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /jatin
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      hr: hr

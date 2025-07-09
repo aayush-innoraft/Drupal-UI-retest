@@ -1,0 +1,38 @@
+uuid: f6adae93-e8a8-4225-8c0b-b2d0a9392606
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hr_block:4547638f-3463-46c8-bf5d-ee8215541aad'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_hrblock
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:4547638f-3463-46c8-bf5d-ee8215541aad'
+settings:
+  id: 'block_content:4547638f-3463-46c8-bf5d-ee8215541aad'
+  label: 'hr block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/hr"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      hr: hr

@@ -1,0 +1,25 @@
+uuid: 0129d61e-7632-4900-912d-8af419b2d8eb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:logo:633b4605-ec41-4abd-b4c1-fb907dd22ae6'
+  module:
+    - block_content
+  theme:
+    - bootstrap5
+id: bootstrap5_logo
+theme: bootstrap5
+region: nav_branding
+weight: -8
+provider: null
+plugin: 'block_content:633b4605-ec41-4abd-b4c1-fb907dd22ae6'
+settings:
+  id: 'block_content:633b4605-ec41-4abd-b4c1-fb907dd22ae6'
+  label: logo
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

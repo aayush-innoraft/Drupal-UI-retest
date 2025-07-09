@@ -1,0 +1,31 @@
+uuid: 1d7d8dc5-8d66-4509-8285-5125631cdac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.apply_for_leaves
+  module:
+    - system
+    - webform
+  theme:
+    - bootstrap5
+id: bootstrap5_webform
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'apply for leave '
+  label_display: visible
+  provider: webform
+  webform_id: apply_for_leaves
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /leave-applied

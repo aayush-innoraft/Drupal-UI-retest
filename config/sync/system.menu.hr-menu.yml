@@ -1,0 +1,8 @@
+uuid: b7948b6d-c899-428a-b55d-3a06e7cc9c38
+langcode: en
+status: true
+dependencies: {  }
+id: hr-menu
+label: 'hr menu'
+description: ''
+locked: false

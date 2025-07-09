@@ -1,0 +1,35 @@
+uuid: 895e1351-13e3-485f-a160-3c2f1504d794
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.emp_card
+    - node.type.all_employes
+    - node.type.article
+    - taxonomy.vocabulary.role
+    - taxonomy.vocabulary.salary
+    - taxonomy.vocabulary.tags
+  module:
+    - block_content
+    - node
+    - taxonomy
+id: hr
+label: HR
+weight: 4
+is_admin: false
+permissions:
+  - 'access user profiles'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer users'
+  - 'create all_employes content'
+  - 'create emp_card block content'
+  - 'create terms in role'
+  - 'create terms in salary'
+  - 'create terms in tags'
+  - 'delete any emp_card block content'
+  - 'delete any emp_card block content revisions'
+  - 'edit any all_employes content'
+  - 'edit own all_employes content'
+  - 'view article revisions'
+  - 'view user email addresses'

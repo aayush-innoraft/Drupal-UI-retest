@@ -1,0 +1,37 @@
+uuid: 4b46f940-8c42-4419-926a-bff8185506e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.aayush-profile
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_aayushprofile
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:aayush-profile'
+settings:
+  id: 'system_menu_block:aayush-profile'
+  label: aayush-profile
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/aayush"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

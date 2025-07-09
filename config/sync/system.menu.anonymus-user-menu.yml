@@ -1,0 +1,8 @@
+uuid: 8a5c6cb3-6428-479d-8560-a1d82fd95273
+langcode: en
+status: true
+dependencies: {  }
+id: anonymus-user-menu
+label: anonymus-user-menu
+description: ''
+locked: false

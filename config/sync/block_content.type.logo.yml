@@ -1,0 +1,8 @@
+uuid: 0ae9901a-ea4c-4fef-8ac9-cc3aad07f381
+langcode: en
+status: true
+dependencies: {  }
+id: logo
+label: logo
+revision: false
+description: null

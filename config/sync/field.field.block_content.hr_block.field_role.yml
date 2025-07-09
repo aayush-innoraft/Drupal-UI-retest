@@ -1,0 +1,21 @@
+uuid: 0d6e00eb-d21e-40e7-8722-4653a984569d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hr_block
+    - field.storage.block_content.field_role
+id: block_content.hr_block.field_role
+field_name: field_role
+entity_type: block_content
+bundle: hr_block
+label: 'role '
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: HR
+default_value_callback: ''
+settings: {  }
+field_type: string

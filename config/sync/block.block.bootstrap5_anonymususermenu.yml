@@ -1,0 +1,33 @@
+uuid: 3e372e94-6f6d-4b4a-8303-71836f4a5a61
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.anonymus-user-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_anonymususermenu
+theme: bootstrap5
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:anonymus-user-menu'
+settings:
+  id: 'system_menu_block:anonymus-user-menu'
+  label: anonymus-user-menu
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

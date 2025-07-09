@@ -1,0 +1,37 @@
+uuid: 40dd098c-d373-4295-bf43-cd04d68585ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.hr-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_hrmenu
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:hr-menu'
+settings:
+  id: 'system_menu_block:hr-menu'
+  label: 'hr menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      hr: hr

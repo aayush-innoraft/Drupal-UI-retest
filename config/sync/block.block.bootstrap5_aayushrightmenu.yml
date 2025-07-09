@@ -1,0 +1,40 @@
+uuid: 816da97c-a66a-4444-976e-4d027beda943
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.aayush-right-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_aayushrightmenu
+theme: bootstrap5
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:aayush-right-menu'
+settings:
+  id: 'system_menu_block:aayush-right-menu'
+  label: aayush-right-menu
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/aayush"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
+      hr: hr

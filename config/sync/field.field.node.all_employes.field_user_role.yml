@@ -1,0 +1,29 @@
+uuid: 4e1da815-9a80-451d-9489-753a179480cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_role
+    - node.type.all_employes
+    - taxonomy.vocabulary.role
+id: node.all_employes.field_user_role
+field_name: field_user_role
+entity_type: node
+bundle: all_employes
+label: user-role
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      role: role
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,40 @@
+uuid: 940ff674-9804-4899-afaf-a99c91aff468
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.puneet-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_puneetmenu
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:puneet-menu'
+settings:
+  id: 'system_menu_block:puneet-menu'
+  label: 'puneet menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /puneet
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
+      hr: hr
