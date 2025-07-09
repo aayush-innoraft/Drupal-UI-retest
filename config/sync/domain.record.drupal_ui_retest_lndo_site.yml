@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 id: drupal_ui_retest_lndo_site
 domain_id: 10641847
-hostname: drupal-ui-retest.innoraft.site
+hostname: drupal-ui-retest.innoraft.com
 name: local-employee-management-portal
 scheme: https
 weight: 1
-is_default: false
+is_default: true

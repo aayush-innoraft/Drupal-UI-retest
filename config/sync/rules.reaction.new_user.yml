@@ -1,0 +1,60 @@
+uuid: 8ad1d70f-7f12-4fdd-bc78-e68ca72e9f23
+langcode: en
+status: true
+dependencies: {  }
+id: new_user
+label: 'new user'
+events:
+  -
+    event_name: 'rules_entity_insert:node--all_employes'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 2284e169-07fa-4906-88cf-3d0898074828
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: e26b5a25-1ffe-46c5-b9f2-90fa1e222b9a
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 1ac747fb-30d2-436a-8a68-30b8a8339dc8
+        weight: 0
+        condition_id: rules_node_is_published
+        negate: false
+        context_values: {  }
+        context_mapping:
+          node: node
+        context_processors: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 5be10f68-c5b0-40fe-b022-1a89989dad2a
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 7cd4ce41-f102-44ae-8555-3c48ddf6e17a
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - aayush.pathak@innoraft.com
+          subject: 'New Content is created'
+          message: 'new employee added !'
+          reply: ''
+        context_mapping:
+          language: '@language.current_language_context:language_interface'
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+        provides_mapping: {  }

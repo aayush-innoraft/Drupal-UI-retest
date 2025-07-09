@@ -1,0 +1,28 @@
+uuid: 2cfbb53a-654e-45f7-a8ad-5d649125ec61
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.apply_for_leaves
+    - field.storage.block_content.field_apply_for_leave
+  module:
+    - link
+id: block_content.apply_for_leaves.field_apply_for_leave
+field_name: field_apply_for_leave
+entity_type: block_content
+bundle: apply_for_leaves
+label: 'apply for leave '
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/leave-applied'
+    title: 'apply for leave '
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

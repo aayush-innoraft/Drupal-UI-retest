@@ -1,0 +1,31 @@
+uuid: c76eb472-e410-4cc1-9760-1571bd8a946e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.apply_for_leaves
+    - field.field.block_content.apply_for_leaves.field_apply_for_leave
+  module:
+    - link
+id: block_content.apply_for_leaves.default
+targetEntityType: block_content
+bundle: apply_for_leaves
+mode: default
+content:
+  field_apply_for_leave:
+    type: link_default
+    weight: 26
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
